@@ -1,0 +1,89 @@
+D:\Projects\ICP.KeyExchange.TestLibrary\bin\Debug\ICP.KeyExchange.TestLibrary.dll
+D:\Projects\ICP.KeyExchange.TestLibrary\bin\Debug\ICP.KeyExchange.TestLibrary.pdb
+D:\Projects\ICP.KeyExchange.TestLibrary\bin\Debug\BouncyCastle.Crypto.dll
+D:\Projects\ICP.KeyExchange.TestLibrary\bin\Debug\Newtonsoft.Json.dll
+D:\Projects\ICP.KeyExchange.TestLibrary\bin\Debug\System.ValueTuple.dll
+D:\Projects\ICP.KeyExchange.TestLibrary\bin\Debug\Newtonsoft.Json.pdb
+D:\Projects\ICP.KeyExchange.TestLibrary\bin\Debug\Newtonsoft.Json.xml
+D:\Projects\ICP.KeyExchange.TestLibrary\bin\Debug\System.ValueTuple.xml
+D:\Projects\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.csprojAssemblyReference.cache
+D:\Projects\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.csproj.CoreCompileInputs.cache
+D:\Projects\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.csproj.CopyComplete
+D:\Projects\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.dll
+D:\Projects\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.pdb
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\ICP.KeyExchange.TestLibrary.dll
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\ICP.KeyExchange.TestLibrary.pdb
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Data.Dump.Engine.dll
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.ValueTuple.dll
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Abstractions.dll
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Container.dll
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.ValueTuple.xml
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Abstractions.pdb
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Container.pdb
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.csproj.CoreCompileInputs.cache
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.csproj.CopyComplete
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.dll
+C:\Users\adan.yao\Desktop\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.pdb
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\ICP.KeyExchange.TestLibrary.dll
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\ICP.KeyExchange.TestLibrary.pdb
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.ValueTuple.dll
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Abstractions.dll
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Container.dll
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.ValueTuple.xml
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Abstractions.pdb
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Container.pdb
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.csprojAssemblyReference.cache
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.csproj.CopyComplete
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.dll
+C:\Users\user\Desktop\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.pdb
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\ICP.KeyExchange.TestLibrary.dll
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\ICP.KeyExchange.TestLibrary.pdb
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.ValueTuple.dll
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Abstractions.dll
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Container.dll
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.ValueTuple.xml
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Abstractions.pdb
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Container.pdb
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.csprojAssemblyReference.cache
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.csproj.CoreCompileInputs.cache
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.csproj.CopyComplete
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.dll
+C:\Users\adan.yao\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.pdb
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\ICP.KeyExchange.TestLibrary.dll
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\ICP.KeyExchange.TestLibrary.pdb
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.ValueTuple.dll
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Abstractions.dll
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Container.dll
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\System.ValueTuple.xml
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Abstractions.pdb
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\bin\Debug\Unity.Container.pdb
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.csprojAssemblyReference.cache
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.csproj.CopyComplete
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.dll
+C:\Users\user\Desktop\POS條碼付款交易 step2\GetMemberPaymentInfo\icashendurance\ICP.KeyExchange.TestLibrary\obj\Debug\ICP.KeyExchange.TestLibrary.pdb

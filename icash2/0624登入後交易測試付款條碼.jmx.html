@@ -1,0 +1,227 @@
+<html xmlns:jmeter="http://jmeter.apache.org/">
+   <title>Schematic view of Test Plan</title>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <style>
+ul.tree, ul.tree ul {
+    list-style-type: none;
+    background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAKAQMAAABPHKYJAAAAA1BMVEWIiIhYZW6zAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH1ggGExMZBky19AAAAAtJREFUCNdjYMAEAAAUAAHlhrBKAAAAAElFTkSuQmCC') repeat-y;
+    margin: 0;
+    padding: 0;
+}
+ul.tree ul {
+    margin-left: 10px;
+}
+ul.tree li {
+    margin: 0;
+    padding: 0 12px;
+    line-height: 20px;
+    background:  url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAUAQMAAACK1e4oAAAABlBMVEUAAwCIiIgd2JB2AAAAAXRSTlMAQObYZgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YIBhQIJYVaFGwAAAARSURBVAjXY2hgQIf/GTDFGgDSkwqATqpCHAAAAABJRU5ErkJggg==') no-repeat;
+    color: #369;
+}
+ul.tree li:last-child { 
+    background: #fff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAUAQMAAACK1e4oAAAABlBMVEUAAwCIiIgd2JB2AAAAAXRSTlMAQObYZgAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9YIBhQIIhs+gc8AAAAQSURBVAjXY2hgQIf/GbAAAKCTBYBUjWvCAAAAAElFTkSuQmCC') no-repeat; 
+}
+</style>
+   </head>
+   <body>
+      <ul class="tree" id="tree">
+         <li><b>load test </b>
+            "登入後交易測試" 
+            (globalVars:[], 
+            executeTearDownThreadsOnShutdown: true)
+            <br>
+            &nbsp;&nbsp;&nbsp;Comments: <i style="color:green"></i></li>
+         <li>
+            <ul>
+               <li><b>run</b>
+                  "登入帳號測試" 
+                  (
+                  threads: "1",
+                  loops: "1",
+                  ramp-up: "1"
+                  )
+                  </li>
+               <li>
+                  <ul>
+                     <li><b>http request</b>
+                        "loginaccount11" 
+                        (method: "POST",
+                        url: "
+                        http://icp-member-beta.ecpay.com.tw/api/Member/MemberInfo://UserCodeLogin",
+                        
+                        body: [
+                        
+                        "EncData"=
+                        "${enc}"
+                        
+                        ]
+                        ,
+                        upload-files: [
+                        
+                        ]
+                        )
+                        </li>
+                     <li>
+                        <ul>
+                           <li><b>read csv into vars</b>
+                              "CSV 資料設定" 
+                              (file: "C:/Users/user/Desktop/GetMemberPaymentInfo/icashendurance/ConsoleApp1/bin/Debug/important11.txt", 
+                              vars:"id,sign,enc",
+                              sharing:"shareMode.group",
+                              recycleOnEof:false,
+                              stopThreadOnEof:true
+                              )
+                              <br></li>
+                           <li><b>add headers</b>
+                              "HTTP loginaccount" 
+                              (headers:[
+                              
+                              {"X-iCP-EncKeyID"=
+                              "${id}"
+                              ,
+                              {"X-iCP-Signature"=
+                              "${sign}"
+                              ])
+                              </li>
+                           <li><b>write samples</b>
+                              "檢視結果樹" </li>
+                           <li><b>write samples</b>
+                              "Summary Report" </li>
+                        </ul>
+                     </li>
+                  </ul>
+               </li>
+               <li><b>run</b>
+                  "交易測試" 
+                  (
+                  threads: "3000",
+                  loops: "1",
+                  ramp-up: "100"
+                  )
+                  </li>
+               <li>
+                  <ul>
+                     <li><b>http request</b>
+                        "GetMemberPaymentInfo22" 
+                        (method: "POST",
+                        url: "
+                        http://icp-payment-beta.ecpay.com.tw/app/Payment://GetMemberPaymentInfo",
+                        
+                        body: [
+                        
+                        "EncData"=
+                        "${enc1}"
+                        
+                        ]
+                        ,
+                        upload-files: [
+                        
+                        ]
+                        )
+                        </li>
+                     <li>
+                        <ul>
+                           <li><b>read csv into vars</b>
+                              "CSV 資料設定" 
+                              (file: "C:/Users/user/Desktop/GetMemberPaymentInfo/icashendurance/ConsoleApp1/bin/Debug/important22.txt", 
+                              vars:"id1,sign1,enc1",
+                              sharing:"shareMode.group",
+                              recycleOnEof:false,
+                              stopThreadOnEof:true
+                              )
+                              <br></li>
+                           <li><b>add headers</b>
+                              "HTTP Payment" 
+                              (headers:[
+                              
+                              {"X-iCP-EncKeyID"=
+                              "${id1}"
+                              ,
+                              {"X-iCP-Signature"=
+                              "${sign1}"
+                              ])
+                              </li>
+                           <li><b>write samples</b>
+                              "檢視結果樹" </li>
+                           <li><b>write samples</b>
+                              "Summary Report" </li>
+                        </ul>
+                     </li>
+                     <li><b>think-time Constant</b>
+                        "固定值計時器" 
+                        (const:1000ms)
+                        </li>
+                  </ul>
+               </li>
+               <li><b>run</b>
+                  "付款條碼測試" 
+                  (
+                  threads: "10",
+                  loops: "1",
+                  ramp-up: "10"
+                  )
+                  </li>
+               <li>
+                  <ul>
+                     <li><b>http request</b>
+                        "CreateBarcode33" 
+                        (method: "POST",
+                        url: "
+                        http://icp-payment-beta.ecpay.com.tw/app/Payment://CreateBarcode",
+                        
+                        body: [
+                        
+                        "EncData"=
+                        "${enc2}"
+                        
+                        ]
+                        ,
+                        upload-files: [
+                        
+                        ]
+                        )
+                        </li>
+                     <li>
+                        <ul>
+                           <li><b>add headers</b>
+                              "HTTP Payment" 
+                              (headers:[
+                              
+                              {"X-iCP-EncKeyID"=
+                              "${id2}"
+                              ,
+                              {"X-iCP-Signature"=
+                              "${sign2}"
+                              ])
+                              </li>
+                           <li><b>read csv into vars</b>
+                              "CSV 資料設定" 
+                              (file: "C:/Users/user/Desktop/GetMemberPaymentInfo/icashendurance/ConsoleApp1/bin/Debug/important33.txt", 
+                              vars:"id2,sign2,enc2",
+                              sharing:"shareMode.group",
+                              recycleOnEof:false,
+                              stopThreadOnEof:true
+                              )
+                              <br></li>
+                           <li><b>write samples</b>
+                              "檢視結果樹" </li>
+                           <li><b>write samples</b>
+                              "Summary Report" </li>
+                        </ul>
+                     </li>
+                     <li><b>think-time Constant</b>
+                        "固定值計時器" 
+                        (const:10000ms)
+                        </li>
+                  </ul>
+               </li>
+               <li><b>write samples</b>
+                  "檢視結果樹ALL" </li>
+               <li><b>write samples</b>
+                  "All Summary Report" </li>
+            </ul>
+         </li>
+      </ul>
+   </body>
+</html>

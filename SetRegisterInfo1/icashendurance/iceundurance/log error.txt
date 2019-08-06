@@ -1,1 +1,0 @@
-{"EncData":"TXYEJbw9fZ0zo/E+mi+4pCvMnSDjBe5KV82I0qX61gjFrJiXtAQiiGByOb5cLH4U","RtnCode":0,"RtnMsg":"驗證次數已滿，請隔日再使用"}

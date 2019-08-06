@@ -1,0 +1,1 @@
+del /s /Q C:\jmeter\apache-jmeter-5.1.1\apache-jmeter-5.1.1\bin\result.jtl 

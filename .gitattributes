@@ -1,3 +1,4 @@
 jmeter filter=lfs diff=lfs merge=lfs -text
 POS條碼付款交易step2 filter=lfs diff=lfs merge=lfs -text
 POS條碼付款交易step2/ filter=lfs diff=lfs merge=lfs -text
+jdk-8u221-windows-x64.zip filter=lfs diff=lfs merge=lfs -text

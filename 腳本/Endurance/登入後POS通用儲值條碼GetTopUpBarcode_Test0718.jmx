@@ -18,8 +18,8 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">30</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">30</stringProp>
+        <stringProp name="ThreadGroup.num_threads">1000</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1200</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -54,7 +54,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/儲值電文TopUp/GetTopUpByAccountLinkInfo/GetTopUpByAccountLinkInfo/icashendurance/ConsoleApp1/bin/Release/GetTopUpBarCodeLogin.txt</stringProp>
+            <stringProp name="filename">C:/Final_IcashEndurance/儲值電文TopUp/GetTopUpByAccountLinkInfo/GetTopUpByAccountLinkInfo/icashendurance/ConsoleApp1/bin/Release/GetTopUpBarCodeLogin.txt</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="variableNames">id,sign,enc</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -155,7 +155,7 @@
           <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="固定時隔" enabled="true">
             <doubleProp>
               <name>throughput</name>
-              <value>60.0</value>
+              <value>72.0</value>
               <savedValue>0.0</savedValue>
             </doubleProp>
             <intProp name="calcMode">0</intProp>
@@ -166,7 +166,7 @@
           </ConstantTimer>
           <hashTree/>
         </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GetTopUpByATMInfo" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GetTopUpByATMInfo" enabled="false">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="使用者自訂變數" enabled="true">
             <collectionProp name="Arguments.arguments">
               <elementProp name="EncData" elementType="HTTPArgument">
@@ -195,7 +195,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/儲值電文TopUp/GetTopUpByAccountLinkInfo/GetTopUpByAccountLinkInfo/icashendurance/ConsoleApp1/bin/Release/GetTopUpByATMInfo.txt</stringProp>
+            <stringProp name="filename">C:/Final_IcashEndurance/儲值電文TopUp/GetTopUpByAccountLinkInfo/GetTopUpByAccountLinkInfo/icashendurance/ConsoleApp1/bin/Release/GetTopUpByATMInfo.txt</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="variableNames">id11,sign11,enc11</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -296,148 +296,7 @@
           <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="固定時隔" enabled="true">
             <doubleProp>
               <name>throughput</name>
-              <value>60.0</value>
-              <savedValue>0.0</savedValue>
-            </doubleProp>
-            <intProp name="calcMode">0</intProp>
-          </ConstantThroughputTimer>
-          <hashTree/>
-          <ConstantTimer guiclass="ConstantTimerGui" testclass="ConstantTimer" testname="固定值計時器" enabled="true">
-            <stringProp name="ConstantTimer.delay">3000</stringProp>
-          </ConstantTimer>
-          <hashTree/>
-        </hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="GetTotalCoins" enabled="true">
-          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="使用者自訂變數" enabled="true">
-            <collectionProp name="Arguments.arguments">
-              <elementProp name="EncData" elementType="HTTPArgument">
-                <boolProp name="HTTPArgument.always_encode">true</boolProp>
-                <stringProp name="Argument.value">${enc11}</stringProp>
-                <stringProp name="Argument.metadata">=</stringProp>
-                <boolProp name="HTTPArgument.use_equals">true</boolProp>
-                <stringProp name="Argument.name">EncData</stringProp>
-              </elementProp>
-            </collectionProp>
-          </elementProp>
-          <stringProp name="HTTPSampler.domain">icp-payment-beta.ecpay.com.tw/app/Payment</stringProp>
-          <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">https</stringProp>
-          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/GetTotalCoins</stringProp>
-          <stringProp name="HTTPSampler.method">POST</stringProp>
-          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
-          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
-          <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
-          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
-          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
-          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
-          <stringProp name="HTTPSampler.response_timeout"></stringProp>
-        </HTTPSamplerProxy>
-        <hashTree>
-          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/儲值電文TopUp/GetTopUpByAccountLinkInfo/GetTopUpByAccountLinkInfo/icashendurance/ConsoleApp1/bin/Release/GetTopUpByATMInfo.txt</stringProp>
-            <stringProp name="fileEncoding">UTF-8</stringProp>
-            <stringProp name="variableNames">id33,sign33,enc33</stringProp>
-            <boolProp name="ignoreFirstLine">false</boolProp>
-            <stringProp name="delimiter">,</stringProp>
-            <boolProp name="quotedData">false</boolProp>
-            <boolProp name="recycle">false</boolProp>
-            <boolProp name="stopThread">true</boolProp>
-            <stringProp name="shareMode">shareMode.group</stringProp>
-          </CSVDataSet>
-          <hashTree/>
-          <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="檢視結果樹" enabled="true">
-            <boolProp name="ResultCollector.error_logging">false</boolProp>
-            <objProp>
-              <name>saveConfig</name>
-              <value class="SampleSaveConfiguration">
-                <time>true</time>
-                <latency>true</latency>
-                <timestamp>true</timestamp>
-                <success>true</success>
-                <label>true</label>
-                <code>true</code>
-                <message>true</message>
-                <threadName>true</threadName>
-                <dataType>true</dataType>
-                <encoding>false</encoding>
-                <assertions>true</assertions>
-                <subresults>true</subresults>
-                <responseData>true</responseData>
-                <samplerData>true</samplerData>
-                <xml>false</xml>
-                <fieldNames>true</fieldNames>
-                <responseHeaders>true</responseHeaders>
-                <requestHeaders>true</requestHeaders>
-                <responseDataOnError>false</responseDataOnError>
-                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                <assertionsResultsToSave>0</assertionsResultsToSave>
-                <bytes>true</bytes>
-                <sentBytes>true</sentBytes>
-                <url>true</url>
-                <threadCounts>true</threadCounts>
-                <idleTime>true</idleTime>
-                <connectTime>true</connectTime>
-              </value>
-            </objProp>
-            <stringProp name="filename"></stringProp>
-          </ResultCollector>
-          <hashTree/>
-          <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP loginaccount" enabled="true">
-            <collectionProp name="HeaderManager.headers">
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">X-iCP-EncKeyID</stringProp>
-                <stringProp name="Header.value">${id33}</stringProp>
-              </elementProp>
-              <elementProp name="" elementType="Header">
-                <stringProp name="Header.name">X-iCP-Signature</stringProp>
-                <stringProp name="Header.value">${sign33}</stringProp>
-              </elementProp>
-            </collectionProp>
-          </HeaderManager>
-          <hashTree/>
-          <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
-            <boolProp name="ResultCollector.error_logging">false</boolProp>
-            <objProp>
-              <name>saveConfig</name>
-              <value class="SampleSaveConfiguration">
-                <time>true</time>
-                <latency>true</latency>
-                <timestamp>true</timestamp>
-                <success>true</success>
-                <label>true</label>
-                <code>true</code>
-                <message>true</message>
-                <threadName>true</threadName>
-                <dataType>true</dataType>
-                <encoding>false</encoding>
-                <assertions>true</assertions>
-                <subresults>true</subresults>
-                <responseData>false</responseData>
-                <samplerData>false</samplerData>
-                <xml>false</xml>
-                <fieldNames>true</fieldNames>
-                <responseHeaders>false</responseHeaders>
-                <requestHeaders>false</requestHeaders>
-                <responseDataOnError>false</responseDataOnError>
-                <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-                <assertionsResultsToSave>0</assertionsResultsToSave>
-                <bytes>true</bytes>
-                <sentBytes>true</sentBytes>
-                <url>true</url>
-                <threadCounts>true</threadCounts>
-                <idleTime>true</idleTime>
-                <connectTime>true</connectTime>
-              </value>
-            </objProp>
-            <stringProp name="filename"></stringProp>
-          </ResultCollector>
-          <hashTree/>
-          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="固定時隔" enabled="true">
-            <doubleProp>
-              <name>throughput</name>
-              <value>60.0</value>
+              <value>72.0</value>
               <savedValue>0.0</savedValue>
             </doubleProp>
             <intProp name="calcMode">0</intProp>
@@ -476,7 +335,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/儲值電文TopUp/GetTopUpByAccountLinkInfo/GetTopUpByAccountLinkInfo/icashendurance/ConsoleApp1/bin/Release/GetTopUpBarCode.txt</stringProp>
+            <stringProp name="filename">C:/Final_IcashEndurance/儲值電文TopUp/GetTopUpByAccountLinkInfo/GetTopUpByAccountLinkInfo/icashendurance/ConsoleApp1/bin/Release/GetTopUpBarCode.txt</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="variableNames">id22,sign22,enc22</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -571,7 +430,7 @@
           <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="固定時隔" enabled="true">
             <doubleProp>
               <name>throughput</name>
-              <value>60.0</value>
+              <value>72.0</value>
               <savedValue>0.0</savedValue>
             </doubleProp>
             <intProp name="calcMode">0</intProp>

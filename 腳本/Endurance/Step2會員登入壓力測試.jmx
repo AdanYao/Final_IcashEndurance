@@ -19,7 +19,7 @@
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">1000</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">50</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">100</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -54,7 +54,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/註冊登入step1/Loginaccount5/Loginaccount/icashendurance/ConsoleApp1/bin/Release/endruancetestlogin.txt</stringProp>
+            <stringProp name="filename">C:/Final_IcashEndurance/註冊登入step1/Loginaccount5/Loginaccount/icashendurance/ConsoleApp1/bin/Release/endruancetestlogin.txt</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="variableNames">id,sign,enc</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>

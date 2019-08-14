@@ -54,7 +54,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/條碼查詢/QueryMemberInfo/icashendurance/ConsoleApp1/bin/Release/important22.txt</stringProp>
+            <stringProp name="filename">C:/Final_IcashEndurance/條碼查詢/QueryMemberInfo/icashendurance/ConsoleApp1/bin/Release/QueryMemberlogin.txt</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="variableNames">id,sign,enc</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -160,8 +160,8 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">700</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">50</stringProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -196,7 +196,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/條碼查詢/QueryMemberInfo/icashendurance/ConsoleApp1/bin/Release/important11.txt</stringProp>
+            <stringProp name="filename">C:/Final_IcashEndurance/條碼查詢/QueryMemberInfo/icashendurance/ConsoleApp1/bin/Release/QueryMemberInfo.txt</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="variableNames">id1133,sign1133,enc1133</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -365,7 +365,7 @@
             <assertionsResultsToSave>0</assertionsResultsToSave>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\adan.yao\Desktop\icash2\0715\QueryMemberInfo.txt</stringProp>
+        <stringProp name="filename">C:\Final_IcashEndurance\viewlog\QueryMemberInfo.xml</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>

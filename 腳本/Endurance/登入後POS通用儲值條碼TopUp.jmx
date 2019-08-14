@@ -160,8 +160,8 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">389</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">389</stringProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -374,7 +374,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\adan.yao\Desktop\icash2\0722\TopUpcli.txt</stringProp>
+        <stringProp name="filename">C:\Final_IcashEndurance\viewlog\GetTopUp.xml</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>

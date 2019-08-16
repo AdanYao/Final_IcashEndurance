@@ -18,8 +18,8 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">500</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">50</stringProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -54,7 +54,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/Users/adan.yao/Desktop/註冊登入step1/AuthIDNO4/icashendurance/ConsoleApp1/bin/Debug/important11.txt</stringProp>
+            <stringProp name="filename">C:/Final_IcashEndurance/註冊登入step1/AuthIDNO4/icashendurance/ConsoleApp1/bin/Release/AuthIDNOLogin.txt</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="variableNames">id,sign,enc</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -160,8 +160,8 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">500</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">50</stringProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -170,13 +170,13 @@
         <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="AuthIDNO" enabled="true">
           <elementProp name="HTTPsampler.Files" elementType="HTTPFileArgs">
             <collectionProp name="HTTPFileArgs.files">
-              <elementProp name="C:\Users\adan.yao\Desktop\icash2\0704\06.jpeg" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\adan.yao\Desktop\icash2\0704\06.jpeg</stringProp>
+              <elementProp name="C:\Final_IcashEndurance\icash2\06.jpeg" elementType="HTTPFileArg">
+                <stringProp name="File.path">C:\Final_IcashEndurance\icash2\06.jpeg</stringProp>
                 <stringProp name="File.paramname">img1</stringProp>
                 <stringProp name="File.mimetype">image/jpeg</stringProp>
               </elementProp>
-              <elementProp name="C:\Users\adan.yao\Desktop\icash2\0704\12.jpeg" elementType="HTTPFileArg">
-                <stringProp name="File.path">C:\Users\adan.yao\Desktop\icash2\0704\12.jpeg</stringProp>
+              <elementProp name="C:\Final_IcashEndurance\icash2\12.jpeg" elementType="HTTPFileArg">
+                <stringProp name="File.path">C:\Final_IcashEndurance\icash2\12.jpeg</stringProp>
                 <stringProp name="File.paramname">img2</stringProp>
                 <stringProp name="File.mimetype">image/jpeg</stringProp>
               </elementProp>
@@ -210,7 +210,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/Users/adan.yao/Desktop/註冊登入step1/AuthIDNO4/icashendurance/ConsoleApp1/bin/Debug/important221.txt</stringProp>
+            <stringProp name="filename">C:/Final_IcashEndurance/註冊登入step1/AuthIDNO4/icashendurance/ConsoleApp1/bin/Release/AuthIDNO.txt</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="variableNames">id1133,sign1133,enc1133</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -271,7 +271,7 @@
                 <connectTime>true</connectTime>
               </value>
             </objProp>
-            <stringProp name="filename">C:\Users\adan.yao\Desktop\icash2\0705\AuthIDNO.txt</stringProp>
+            <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
           <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
@@ -391,7 +391,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\adan.yao\Desktop\icash2\0723\m004.txt</stringProp>
+        <stringProp name="filename">C:\Final_IcashEndurance\viewlog\AuthIDNO.xml</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>

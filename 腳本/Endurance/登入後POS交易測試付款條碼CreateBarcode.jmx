@@ -37,9 +37,9 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">icp-member-beta.ecpay.com.tw/api/Member/MemberInfo</stringProp>
+          <stringProp name="HTTPSampler.domain">icp-member-stage.ecpay.com.tw/api/Member/MemberInfo</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/UserCodeLogin</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -54,7 +54,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/Final_IcashEndurance/POS條碼付款交易step2/GetMemberPaymentInfo/icashendurance/ConsoleApp1/bin/Release/GetMemberPaymentLogin.txt</stringProp>
+            <stringProp name="filename">C:/Final_IcashEndurance/POS條碼付款交易step2/POS條碼付款交易step2/GetMemberPaymentInfo/icashendurance/ConsoleApp1/bin/Release/GetMemberPaymentLogin.txt</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="variableNames">id,sign,enc</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -342,9 +342,9 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">icp-payment-beta.ecpay.com.tw/app/Payment</stringProp>
+          <stringProp name="HTTPSampler.domain">icp-payment-stage.ecpay.com.tw/app/Payment</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/CreateBarcode</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -371,7 +371,7 @@
           </HeaderManager>
           <hashTree/>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/Final_IcashEndurance/POS條碼付款交易step2/GetMemberPaymentInfo/icashendurance/ConsoleApp1/bin/Release/GetMemberPaymentBarcode.txt</stringProp>
+            <stringProp name="filename">C:/Final_IcashEndurance/POS條碼付款交易step2/POS條碼付款交易step2/GetMemberPaymentInfo/icashendurance/ConsoleApp1/bin/Release/GetMemberPaymentBarcode.txt</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="variableNames">id2,sign2,enc2</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>

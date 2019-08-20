@@ -37,9 +37,9 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">icp-member-beta.ecpay.com.tw/api/Member/MemberInfo</stringProp>
+          <stringProp name="HTTPSampler.domain">icp-member-stage.ecpay.com.tw/api/Member/MemberInfo</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/UserCodeLogin</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -319,9 +319,9 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">icp-payment-beta.ecpay.com.tw/app/TopUpPayment</stringProp>
+          <stringProp name="HTTPSampler.domain">icp-payment-stage.ecpay.com.tw/app/TopUpPayment</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/GetTopUpBarCode</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>

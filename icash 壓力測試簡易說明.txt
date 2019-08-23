@@ -1,0 +1,110 @@
+前置作業
+
+設定6~8台win10壓力測試 虛擬機
+設定java環境變數 for jmeter
+
+(一)大量產出註冊帳號會出現IP鎖定，需先將IP 加入白名單。
+(二)簡訊驗證次數一天只能三次，需解開限制 , 簡訊驗證需統一改成固定數值 ex:111111
+(三)OP & Server DB 提供不過期的 Token and AuthV (最少提供3000筆AuthV及不過期Token)---->能測試的數量取決於提供的數量
+ 需求數量去進行測試
+(四)條碼過期時間5分鐘，至少延長至2小時。
+(五)交易部份，提供廠商的MID and Token (包含建立廠商資料&收款設定)
+(六)壓力測試虛擬機 需要 win10 + excel(過濾資料用) 
+
+
+PS:M0004 會員資料填寫及驗證   ----->這個到時侯會實際驗證嗎?? 目前只是放2張圖片即可。
+
+img1	img	Required	身份證正反面圖片
+img2	img	Required	身份證正反面圖片
+
+1.使用C# 產出註冊和登入必要的 EncData參數和Header
+
+2.註冊使用 分6台 電腦 每台約500筆，預設條件 1小時內需取得 EncData參數和Header
+
+  目前設定為3000筆，持續至處理完成，記錄每秒處理的平均數量
+
+註冊需做三個API、分三個folder執行 C# 同時執行SetRegisterInfo(M0003)、SendAuthSMS(M0007)、CheckRegisterAuthSMS(M0010)
+
+C:\Final_IcashEndurance\註冊登入step1\SetRegisterInfo1\icashendurance\ConsoleApp1\bin\Release       ---->執行ConsoleApp1.exe
+C:\Final_IcashEndurance\註冊登入step1\SendAuthSMS2\icashendurance\ConsoleApp1\bin\Release           ---->執行ConsoleAPP1.exe
+C:\Final_IcashEndurance\註冊登入step1\CheckRegisterAuthSMS3\icashendurance\ConsoleApp1\bin\Release  ---->執行ConsoleAPP1.exe
+
+
+3.VSC 註冊3000筆帳號完成, 需使用jmeter壓力執行完成才算完成註冊，第一階段完成註冊壓力測試
+C:\jmeter\apache-jmeter-5.1.1\apache-jmeter-5.1.1\bin\Endurance\                 ----->執行Step1註冊壓力測試.jmx
+
+4.會員登入UserCodeLogin(M0005)壓力測試
+
+C:\Final_IcashEndurance\註冊登入step1\Loginaccount5\Loginaccount\icashendurance\ConsoleApp1\bin\Release ---->執行ConsoleApp1.exe
+
+C:\jmeter\apache-jmeter-5.1.1\apache-jmeter-5.1.1\bin\Endurance\                  -----> 執行Step2會員登入壓力測試.jmx
+
+  jmeter Step2會員登入壓力測試 ,csv --->read endurancetestlogin.txt
+
+
+交易API前 需先跑完M004會員資料填寫及驗證
+
+C:\Final_IcashEndurance\註冊登入step1\AuthIDNO4\icashendurance\ConsoleApp1\bin\release            ---->執行ConeolsAPP1.exe
+
+https://icp.ecpay.com.tw/app/MemberInfo/AuthIDNO
+
+路徑配置:
+
+放置資料 c:\aes.csv、TopUpBarcode.csv、PaymentBarcode.csv
+
+放置資料 C:\Final_IcashEndurance\viewlog , AuthIDNO.xml、CheckOut.xml、EnduranceLogin.xml、GetTopUp.xml、QueryMemberInfo.xml、register.xml
+
+5.POS 
+
+PS:CK04 廠商金鑰綁定，需 MID & Token. 
+   https://icp-member-stage.ecpay.com.tw/app/certificate/bindMerchantCert
+
+需要建立廠商資料、收款設定要開啟
+
+5.1產生付款條碼 --->P001 /Payment/CreateBarcode
+
+C:\Final_IcashEndurance\腳本\Endurance\        ------> 登入後交易測試付款條碼CreateBarcode.jmx
+
+   jmeter  GetMemberPaymentLogin ,csv --->read GetMemberPaymentlogin.txt
+           GetMemberPaymentInfo  ,csv --->read GetMemberPaymentInfo.txt
+                 CreateBarcode   ,csv --->read GetMemberPaymentBarcode.txt
+
+
+          獲得PaymentBarCode & keyiv ----->Encode  檔名 PaymentBarcode.csv & aes.csv
+
+ 5.2POS付款交易
+ C:\Final_IcashEndurance\腳本\Endurance\                                          ---------->登入後POS訂單付款交易測試.jmx
+     
+   jmeter PostCheckOutLogin   ,csv --->read PostCheckOutLogin.txt
+          PostCheckOut        ,csv --->read PostCheck.txt                                      
+
+5.3 C:\Final_IcashEndurance\儲值電文\GetTopUpAccountLinkInfo\GetTopUpAccountLinkInfo\icahendurance\ConsoleApp1\bin\release   ---->執行ConeolsAPP1.exe
+
+
+產生通用儲值條碼--->P007 TopUpPayment/GetTopUpBarCode                            
+ 
+C:\Final_IcashEndurance\腳本\Endurance\登入後POS通用儲值條碼GetTopUpBarcode.jmx    --------->登入後POS通用儲值條碼GetTopUpBarcode.jmx 
+ 
+  jmeter GetTopUpLoginAccount ,csv ---> read GetTopUpBarCodeLogin.txt
+         GetTopUpBarcode      ,csv ---> read GetTopUpBarCode.txt     
+
+
+5.4 C:\Final_IcashEndurance\儲值電文TopUp\TopUP\icashendurance\ConsoleApp1\bin\Release    ---->執行ConeolsAPP1.exe
+
+
+C:\Final_IcashEndurance\腳本\Endurance\登入後POS通用儲值條碼TopUp  ------>儲值交易條碼   
+
+   jmeter PostTopLogin ,csv --->read PostTopUpLogin.txt
+          PostTopUp    ,csv --->read PostTop.txt
+
+   要取得POS儲值需要call P007 儲值條碼                                             
+
+5.5 C:\Final_IcashEndurance\條碼查詢\條碼查詢\QueryMemberInfo\icashendurance\ConsoleApp1\bin\Release  ---->執行ConeolsAPP1.exe
+
+
+C:\Final_IcashEndurance\腳本\Endurance\                                  ----------->登入後付款儲值條碼交易查詢QueryMemberInfo.jmx
+
+jmeter 付款儲值交易條碼查詢登入，csv--->read QueryMemberlogin.txt
+               交易條碼查詢     ,csv--->read QueryMemberInfo.txt
+
+ 

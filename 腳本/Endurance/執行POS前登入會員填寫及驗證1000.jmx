@@ -37,9 +37,9 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">icp-member-beta.ecpay.com.tw/api/Member/MemberInfo</stringProp>
+          <stringProp name="HTTPSampler.domain">icp-member-stage.ecpay.com.tw/api/Member/MemberInfo</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/UserCodeLogin</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -54,7 +54,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/Users/adan.yao/Desktop/註冊登入step1/AuthIDNO4/icashendurance/ConsoleApp1/bin/Debug/important11.txt</stringProp>
+            <stringProp name="filename">C:/Final_IcashEndurance/註冊登入step1/AuthIDNO4/icashendurance/ConsoleApp1/bin/Release/AuthIDNOLogin.txt</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="variableNames">id,sign,enc</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -160,7 +160,7 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">500</stringProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
         <stringProp name="ThreadGroup.ramp_time">50</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
@@ -193,9 +193,9 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">icp-member-beta.ecpay.com.tw/api/Member/MemberInfo</stringProp>
+          <stringProp name="HTTPSampler.domain">icp-member-stage.ecpay.com.tw/api/Member/MemberInfo</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/AuthIDNO</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -210,7 +210,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/Users/adan.yao/Desktop/註冊登入step1/AuthIDNO4/icashendurance/ConsoleApp1/bin/Debug/important221.txt</stringProp>
+            <stringProp name="filename">C:/Final_IcashEndurance/註冊登入step1/AuthIDNO4/icashendurance/ConsoleApp1/bin/Release/AuthIDNO.txt</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="variableNames">id1133,sign1133,enc1133</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -271,7 +271,7 @@
                 <connectTime>true</connectTime>
               </value>
             </objProp>
-            <stringProp name="filename">C:\Users\adan.yao\Desktop\icash2\0705\AuthIDNO.txt</stringProp>
+            <stringProp name="filename"></stringProp>
           </ResultCollector>
           <hashTree/>
           <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
@@ -368,12 +368,12 @@
             <message>true</message>
             <threadName>true</threadName>
             <dataType>true</dataType>
-            <encoding>false</encoding>
+            <encoding>true</encoding>
             <assertions>true</assertions>
             <subresults>true</subresults>
             <responseData>true</responseData>
             <samplerData>true</samplerData>
-            <xml>false</xml>
+            <xml>true</xml>
             <fieldNames>true</fieldNames>
             <responseHeaders>true</responseHeaders>
             <requestHeaders>true</requestHeaders>
@@ -391,7 +391,7 @@
             <connectTime>true</connectTime>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\adan.yao\Desktop\icash2\0723\m004.txt</stringProp>
+        <stringProp name="filename">C:\Final_IcashEndurance\viewlog\AuthIDNO.xml</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>

@@ -3,7 +3,7 @@
   <hashTree>
     <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="登入後交易測試" enabled="true">
       <stringProp name="TestPlan.comments"></stringProp>
-      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.functional_mode">true</boolProp>
       <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
       <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="使用者自訂變數" enabled="true">
@@ -18,8 +18,8 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">100</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <stringProp name="ThreadGroup.num_threads">50</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">5</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -37,11 +37,11 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">icp-member-stage.ecpay.com.tw/api/Member/MemberInfo</stringProp>
+          <stringProp name="HTTPSampler.domain">icp-member-stage.ecpay.com.tw</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/UserCodeLogin</stringProp>
+          <stringProp name="HTTPSampler.path">/api/Member/MemberInfo/UserCodeLogin</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -54,7 +54,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/Final_IcashEndurance/註冊登入step1/Loginaccount5/Loginaccount/icashendurance/ConsoleApp1/bin/Release/endruancetestlogin.txt</stringProp>
+            <stringProp name="filename">C:/Loginaccount5/Loginaccount5/Loginaccount/icashendurance/ConsoleApp1/bin/Release/endruancetestlogin.txt</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="variableNames">id,sign,enc</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -116,7 +116,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">C:\Final_IcashEndurance\viewlog\EnduranceLogin.xml</stringProp>
+          <stringProp name="filename"></stringProp>
         </ResultCollector>
         <hashTree/>
         <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="檢視結果樹" enabled="true">
@@ -133,12 +133,12 @@
               <message>true</message>
               <threadName>true</threadName>
               <dataType>true</dataType>
-              <encoding>false</encoding>
+              <encoding>true</encoding>
               <assertions>true</assertions>
               <subresults>true</subresults>
               <responseData>true</responseData>
               <samplerData>true</samplerData>
-              <xml>false</xml>
+              <xml>true</xml>
               <fieldNames>true</fieldNames>
               <responseHeaders>true</responseHeaders>
               <requestHeaders>true</requestHeaders>
@@ -148,12 +148,15 @@
               <bytes>true</bytes>
               <sentBytes>true</sentBytes>
               <url>true</url>
+              <fileName>true</fileName>
+              <hostname>true</hostname>
               <threadCounts>true</threadCounts>
+              <sampleCount>true</sampleCount>
               <idleTime>true</idleTime>
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename"></stringProp>
+          <stringProp name="filename">C:\Final_IcashEndurance\viewlog\EnduranceLogin.xml</stringProp>
         </ResultCollector>
         <hashTree/>
         <kg.apc.jmeter.perfmon.PerfMonCollector guiclass="kg.apc.jmeter.vizualizers.PerfMonGui" testclass="kg.apc.jmeter.perfmon.PerfMonCollector" testname="jp@gc - PerfMon Metrics Collector" enabled="false">
@@ -225,7 +228,7 @@
         </kg.apc.jmeter.perfmon.PerfMonCollector>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="取得PayID" enabled="true">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="取得PayID" enabled="false">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="迴圈控制器" enabled="true">
           <boolProp name="LoopController.continue_forever">false</boolProp>

@@ -1,6 +1,6 @@
 前置作業
 
-設定6~8台win10壓力測試 虛擬機
+設定6~8台win10壓力測試 虛擬機，每台虛擬機 需閉防火牆 避免影響Jmeter運行
 設定java環境變數 for jmeter
 
 (一)大量產出註冊帳號會出現IP鎖定，需先將IP 加入白名單。
@@ -19,7 +19,7 @@ img2	img	Required	身份證正反面圖片
 
 1.使用C# 產出註冊和登入必要的 EncData參數和Header
 
-2.註冊使用 分6台 電腦 每台約500筆，預設條件 1小時內需取得 EncData參數和Header
+2.註冊使用 分6台 虛擬電腦主機 每台約500筆，預設條件 1小時內需取得 EncData參數和Header
 
   目前設定為3000筆，持續至處理完成，記錄每秒處理的平均數量
 
@@ -31,7 +31,8 @@ C:\Final_IcashEndurance\註冊登入step1\CheckRegisterAuthSMS3\icashendurance\Conso
 
 
 3.VSC 註冊3000筆帳號完成, 需使用jmeter壓力執行完成才算完成註冊，第一階段完成註冊壓力測試
-C:\jmeter\apache-jmeter-5.1.1\apache-jmeter-5.1.1\bin\Endurance\                 ----->執行Step1註冊壓力測試.jmx
+C:\Final_IcashEndurance\腳本\Endurance\Step1註冊壓力測試\       ----->執行Step1註冊壓力測
+Summary Report ---->存成log 路徑 C:\Final_IcashEndurance\viewlog\register.xml
 
 4.會員登入UserCodeLogin(M0005)壓力測試
 
@@ -41,12 +42,17 @@ C:\jmeter\apache-jmeter-5.1.1\apache-jmeter-5.1.1\bin\Endurance\                
 
   jmeter Step2會員登入壓力測試 ,csv --->read endurancetestlogin.txt
 
+檢視結果樹 ----->存成log路徑 C:\Final_IcashEndurance\viewlog\EnduranceLogin.xml
 
-交易API前 需先跑完M004會員資料填寫及驗證
+取得payiddecode --->icp-payment-stage.ecpay.com.tw/app/Payment//GetMemberPaymentInfo
+
+4.1交易API前 需先跑完M004會員資料填寫及驗證
 
 C:\Final_IcashEndurance\註冊登入step1\AuthIDNO4\icashendurance\ConsoleApp1\bin\release            ---->執行ConeolsAPP1.exe
 
 https://icp.ecpay.com.tw/app/MemberInfo/AuthIDNO
+
+檢視結果樹 ---->存成log路徑 C:\Final_IcashEndurance\viewlog\AuthIDNO.xml
 
 路徑配置:
 
@@ -56,12 +62,12 @@ https://icp.ecpay.com.tw/app/MemberInfo/AuthIDNO
 
 5.POS 
 
-PS:CK04 廠商金鑰綁定，需 MID & Token. 
+PS:CK04 廠商金鑰綁定，需 MID & Token.   --->僅執行VS
    https://icp-member-stage.ecpay.com.tw/app/certificate/bindMerchantCert
 
 需要建立廠商資料、收款設定要開啟
 
-5.1產生付款條碼 --->P001 /Payment/CreateBarcode
+5.1 產生付款條碼 --->P001 /Payment/CreateBarcode
 
 C:\Final_IcashEndurance\腳本\Endurance\        ------> 登入後交易測試付款條碼CreateBarcode.jmx
 
@@ -69,14 +75,18 @@ C:\Final_IcashEndurance\腳本\Endurance\        ------> 登入後交易測試付款條碼Cre
            GetMemberPaymentInfo  ,csv --->read GetMemberPaymentInfo.txt
                  CreateBarcode   ,csv --->read GetMemberPaymentBarcode.txt
 
+         獲得PaymentBarCode & keyiv ----->Encode  檔名 PaymentBarcode.csv & aes.csv
 
-          獲得PaymentBarCode & keyiv ----->Encode  檔名 PaymentBarcode.csv & aes.csv
+      產出付款Barcode C:\icash2\PaymentBarCode\PaymentBarCode.xml & keviv1.txt ---使用資料剖析轉成PaymentBarCode.csv & aes.csv copy to c槽下。
 
- 5.2POS付款交易
+ 5.2 POS付款交易
  C:\Final_IcashEndurance\腳本\Endurance\                                          ---------->登入後POS訂單付款交易測試.jmx
      
    jmeter PostCheckOutLogin   ,csv --->read PostCheckOutLogin.txt
-          PostCheckOut        ,csv --->read PostCheck.txt                                      
+          PostCheckOut        ,csv --->read PostCheck.txt 
+
+
+檢視結果樹 ---->存成log路徑 C:\Final_IcashEndurance\viewlog\CheckOut.xml                                     
 
 5.3 C:\Final_IcashEndurance\儲值電文\GetTopUpAccountLinkInfo\GetTopUpAccountLinkInfo\icahendurance\ConsoleApp1\bin\release   ---->執行ConeolsAPP1.exe
 
@@ -86,7 +96,10 @@ C:\Final_IcashEndurance\腳本\Endurance\        ------> 登入後交易測試付款條碼Cre
 C:\Final_IcashEndurance\腳本\Endurance\登入後POS通用儲值條碼GetTopUpBarcode.jmx    --------->登入後POS通用儲值條碼GetTopUpBarcode.jmx 
  
   jmeter GetTopUpLoginAccount ,csv ---> read GetTopUpBarCodeLogin.txt
-         GetTopUpBarcode      ,csv ---> read GetTopUpBarCode.txt     
+         GetTopUpBarcode      ,csv ---> read GetTopUpBarCode.txt
+
+
+檢視結果樹 ---->存成log路徑 C:\icash2\TopUpBarCode\TopUpBarCode.xml     
 
 
 5.4 C:\Final_IcashEndurance\儲值電文TopUp\TopUP\icashendurance\ConsoleApp1\bin\Release    ---->執行ConeolsAPP1.exe
@@ -97,7 +110,9 @@ C:\Final_IcashEndurance\腳本\Endurance\登入後POS通用儲值條碼TopUp  ------>儲值交
    jmeter PostTopLogin ,csv --->read PostTopUpLogin.txt
           PostTopUp    ,csv --->read PostTop.txt
 
-   要取得POS儲值需要call P007 儲值條碼                                             
+   要取得POS儲值需要call P007 儲值條碼 
+
+檢視結果樹 ---->存成log路徑 C:\Final_IcashEndurance\viewlog\GetTopUp.xml                                            
 
 5.5 C:\Final_IcashEndurance\條碼查詢\條碼查詢\QueryMemberInfo\icashendurance\ConsoleApp1\bin\Release  ---->執行ConeolsAPP1.exe
 
@@ -106,5 +121,8 @@ C:\Final_IcashEndurance\腳本\Endurance\                                  -------
 
 jmeter 付款儲值交易條碼查詢登入，csv--->read QueryMemberlogin.txt
                交易條碼查詢     ,csv--->read QueryMemberInfo.txt
+
+
+檢視結果樹 ---->存成log路徑 C:\Final_IcashEndurance\viewlog\QueryMemberInfo.xml
 
  

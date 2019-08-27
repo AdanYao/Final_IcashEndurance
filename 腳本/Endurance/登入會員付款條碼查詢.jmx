@@ -37,11 +37,11 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">icp-member-beta.ecpay.com.tw/api/Member/MemberInfo</stringProp>
+          <stringProp name="HTTPSampler.domain">icp-member-stage.ecpay.com.tw//app/certificate</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
-          <stringProp name="HTTPSampler.path">/UserCodeLogin</stringProp>
+          <stringProp name="HTTPSampler.path">/bindMerchantCert</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
           <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
           <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
@@ -54,7 +54,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/Users/adan.yao/Desktop/條碼查詢/QueryMemberInfo/icashendurance/ConsoleApp1/bin/Debug/important22.txt</stringProp>
+            <stringProp name="filename">C:/Final_IcashEndurance/條碼查詢/QueryMemberInfo/icashendurance/ConsoleApp1/bin/Release/QueryMemberlogin.txt</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="variableNames">id,sign,enc</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -160,8 +160,8 @@
           <boolProp name="LoopController.continue_forever">false</boolProp>
           <stringProp name="LoopController.loops">1</stringProp>
         </elementProp>
-        <stringProp name="ThreadGroup.num_threads">250</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">25</stringProp>
+        <stringProp name="ThreadGroup.num_threads">100</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">4</stringProp>
         <boolProp name="ThreadGroup.scheduler">false</boolProp>
         <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
@@ -179,9 +179,9 @@
               </elementProp>
             </collectionProp>
           </elementProp>
-          <stringProp name="HTTPSampler.domain">icp-payment-beta.ecpay.com.tw/api/Payment/POS</stringProp>
+          <stringProp name="HTTPSampler.domain">icp-payment-stage.ecpay.com.tw/api/Payment/POS</stringProp>
           <stringProp name="HTTPSampler.port"></stringProp>
-          <stringProp name="HTTPSampler.protocol">http</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.contentEncoding"></stringProp>
           <stringProp name="HTTPSampler.path">/QueryMemberInfo</stringProp>
           <stringProp name="HTTPSampler.method">POST</stringProp>
@@ -196,7 +196,7 @@
         </HTTPSamplerProxy>
         <hashTree>
           <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV 資料設定" enabled="true">
-            <stringProp name="filename">C:/Users/adan.yao/Desktop/條碼查詢/QueryMemberInfo/icashendurance/ConsoleApp1/bin/Debug/important11.txt</stringProp>
+            <stringProp name="filename">C:/Final_IcashEndurance/條碼查詢/QueryMemberInfo/icashendurance/ConsoleApp1/bin/Release/QueryMemberInfo.txt</stringProp>
             <stringProp name="fileEncoding">UTF-8</stringProp>
             <stringProp name="variableNames">id1133,sign1133,enc1133</stringProp>
             <boolProp name="ignoreFirstLine">false</boolProp>
@@ -365,7 +365,7 @@
             <assertionsResultsToSave>0</assertionsResultsToSave>
           </value>
         </objProp>
-        <stringProp name="filename">C:\Users\adan.yao\Desktop\icash2\0715\QueryMemberInfo.txt</stringProp>
+        <stringProp name="filename">C:\Final_IcashEndurance\viewlog\QueryMemberInfo.xml</stringProp>
       </ResultCollector>
       <hashTree/>
     </hashTree>
